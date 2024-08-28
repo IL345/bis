@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-image: url(wallpaper.jpg);
+     background-position: center;
+     background-size:cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+      background: rgba(1, 1, 1, 0.0);
+     border: 1px solid black;
+     backdrop-filter: blur(2px);
+    padding: 19px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    width: 289px;
+    text-align: center;
+    
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.textbox {
+    margin-bottom: 12px;
+}
+
+.textbox input {
+    width: 89%;
+    padding: 10px;
+    background: rgba(1, 1, 1, 0.0);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+   transition: background 0.3s ease; 
+    transform: scale(1);
+   
+}
+
+.textbox:hover{
+     transform: scale(1.1);
+     background: #fff;
+    box-shadow: 0 0 40px rgba(0, 455, 255, 0.8);
+
+}
+
+.btn {
+    width: 95%;
+     background:#fff;
+     border: none;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+     transform: scale(1);
+}
+
+.btn:hover {
+     transform: scale(1.1);
+    background: skyblue;
+    box-shadow: 0 0 80px rgba(0, 455, 255, 0.9);
+}
+
+.signup {
+    margin-top: 10px;
+
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="beranda.html">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <input type="submit" class="btn" value="Sign In">
+                <p class="signup"><font color="#fff">Belum punya akun?</font> <a href="#">Daftar di sini</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

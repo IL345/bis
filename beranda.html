@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.search-bar {
+    float: left;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-bar button {
+    padding: 4.8px 4px;
+    border: none;
+    background:deepskyblue;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+
+
+/* Header */
+header {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-image: url(inoac.jfif);
+     background-position: center;
+     background-size:cover;
+}
+
+.logo h1 {
+    display: inline;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+ {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+   
+   
+}
+
+.content {
+    text-align: left;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: left;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: skyblue;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Produk Section */
+.produk-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produk-item {
+    border: 1px solid skyblue;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produk-item img {
+    max-width: 100%;
+}
+
+.produk-item h3 {
+    font-size: 1.2em;
+}
+
+.produk-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.produk-item a {
+    display: block;
+    margin-top: 10px;
+    color:#333;
+    text-decoration: none;
+}
+
+
+         .buy-button {
+            display: inline-block;
+            padding: 1px 1px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transform: scale(1);
+        }
+        .buy-button:hover {
+     transform: scale(1.1);
+    background: red;
+    box-shadow: 0 0 80px rgba(0, 455, 255, 0.9);
+        }
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    padding: 10px 17px;
+    border: none;
+    border-radius:20px ;
+    background: deepskyblue;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    transform: scale(1)
+}
+
+
+/* Info Perusahaan Section */
+.info-perusahaan {
+    padding: 20px 0;
+    background: skyblue;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.info-perusahaan a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {   
+    height: 19vh;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image: url(dark.png);
+     background-position: center;
+     background-size:cover;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+ </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+            </div>
+        </div>
+    </header>
+
+     <div class="nav">
+            <p align="center"> <b><a href="beranda.html">Beranda</a></b>
+             <b><a href="komen.html">Kesan&Saran</a></b>
+    </div>
+     <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <button type="button">Cari</button>
+
+              </div>
+
+    <section class="hero">
+        <div class="container">
+            <h4>Temukan Produk Terbaik Kami</h4>
+            <p>Kualitas Terjamin dengan Harga Terbaik</p>
+            <div class="nav">
+            <p align="left"><button type="button"><small><a href="semuaproduk.html">Jelajahi Semua Produk</a></small></button><br>
+                 <a href="http://il345.github.io/planet/" class="back-button"><b>Masuk</b></a>
+
+        </div>
+    </section>
+
+    <!-- Informasi Produk -->
+    <section class="info-produk">
+        <div class="container">
+             <div class="nav">
+             <b><p align="right"><a href="produkterbaru.html">Lihat semua</a></p></b>
+            <h3>Produk Terbaru Kami</h3>
+
+             <div class="produk-list">
+                  <div class="produk-item">
+                <img src="inoac.jfif"align="center"width="80px"height="80px">
+                    <h5>Nama Produk 1</h5>
+                    <p>Rp100.000</p>
+                     <a href="#" class="buy-button"><small>Beli Sekarang</small></a>
+                </div>
+                  <div class="produk-item">
+                <img src="inoac.jfif"align="center"width="80px"height="80px">
+                    <h5>Nama Produk 1</h5>
+                    <p>Rp100.000</p>
+                     <a href="#" class="buy-button"><small>Beli Sekarang</small></a>
+                </div>
+                  <div class="produk-item">
+                <img src="inoac.jfif"align="center"width="80px"height="80px">
+                    <h5>Nama Produk 1</h5>
+                    <p>Rp100.000</p>
+                     <a href="#" class="buy-button"><small>Beli Sekarang</small></a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Rekomendasi Produk -->
+    <section class="rekomendasi-produk">
+        <div class="container">
+             <div class="nav">
+             <b><p align="right"><a href="produkrekomendasi.html">Lihat semua</a></p></b>
+            <h3>Rekomendasi Untuk Anda</h3>
+
+            <div class="produk-list">
+                 <div class="produk-item">
+                <img src="inoac.jfif"align="center"width="80px"height="80px">
+                    <h5>Nama Produk 1</h5>
+                    <p>Rp100.000</p>
+                     <a href="#" class="buy-button"><small>Beli Sekarang</small></a>
+                </div>
+                  <div class="produk-item">
+                <img src="inoac.jfif"align="center"width="80px"height="80px">
+                    <h5>Nama Produk 1</h5>
+                    <p>Rp100.000</p>
+                     <a href="#" class="buy-button"><small>Beli Sekarang</small></a>
+                </div>
+                  <div class="produk-item">
+                <img src="inoac.jfif"align="center"width="80px"height="80px">
+                    <h5>Nama Produk 1</h5>
+                    <p>Rp100.000</p>
+                     <a href="#" class="buy-button"><small>Beli Sekarang</small></a>
+                </div>
+              
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Perusahaan -->
+    <section class="info-perusahaan">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan yang berkomitmen untuk memberikan produk berkualitas dengan layanan terbaik.</p>
+            <div class="contact-info">
+                <p><P align="left"><strong>Nama Perusahaan:</strong>PT INOAC POLYTECHNO</P></p>
+                <p><P align="left"><strong>ALAMAT:</strong>Kawasan Bintang Puspita Teluk Jambe Barat Karawang</P></p>
+                <p><P align="left"><strong>TELEPON:</strong>0267-409852</P></p>
+                <p><P align="left"><strong>EMAIL:</strong><a href="ihap968@gmail.com">Email Kami</a></P></p>
+                <p><P align="left"><strong>WhatsApp:</strong></P></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+       
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+                 <div class="nav">
+                 <img src="instagram.webp"width="50"height="50">
+                 <img src="facebook.png"width="50"height="50">
+             </div>
+
+
+
+             <div class="social-media">
+               <b> <a href="">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+
+              
+    </footer>
+      
+</body>
+</html>
+
+
+
+
